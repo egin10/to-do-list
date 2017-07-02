@@ -21,9 +21,11 @@ app.use(session({
 }));
 
 //============= ROUTER
-app.get('/', function(req, res){
-  res.end('Hello World!');
-});
+var main = require('./routes');
+var user = require('./routes/user');
+
+app.use('/', main);
+app.use('/user', user);
 
 
 //============= MIDDLEWARE 404 ROUTE
