@@ -1,8 +1,6 @@
-# to-do-list
-Learn Expressjs, Mysql for ToDo List
+# mnuralfiansyah.github.io
 
-1. clone : `git clone https://github.com/egin10/to-do-list`
-2. install : `cd to-do-list && npm i`
-3. run : `node app` or `npm start`
-
-Explore it!
+Ini adalah halaman Website Portofolio saya menggunakan Bootsrap 3 dan Jquery <br>
+Jika Berminat Silahkan Clone https://github.com/mnuralfiansyah/mnuralfiansyah.github.io.git <br>
+atau <a href="facebook.com/mnuralfiansyah">Download</a> <br>
+Untuk Melihat <a href="mnuralfiansyah.github.io">Demo</a>
