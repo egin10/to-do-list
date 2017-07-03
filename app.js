@@ -25,7 +25,6 @@ app.get('/', function(req, res){
   res.end('Hello World!');
 });
 
-
 //============= MIDDLEWARE 404 ROUTE
 app.use('*', function(req, res){
   res.writeHead(404, {"Content-Type":"text/html"});
