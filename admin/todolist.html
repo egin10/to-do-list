@@ -16,6 +16,9 @@
     <!-- Bootstrap Core Css -->
     <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
+
     <!-- Waves Effect Css -->
     <link href="plugins/node-waves/waves.css" rel="stylesheet" />
 
@@ -155,8 +158,9 @@
                     <div class="card">
                         <div class="header">
                             <div class="col-md-2">
-                              <button type="button" class="btn bg-red btn-block btn-sm waves-effect">Add</button>
+                              <button type="button" class="btn bg-red btn-block btn-md waves-effect" data-toggle="modal" data-target="#defaultModal">Add</button>
                             </div>
+                            <br>
                             <!-- <ul class="header-dropdown m-r--5">
                             </ul> -->
                         </div>
@@ -298,7 +302,45 @@
             <!-- #END# Basic Examples -->
         </div>
 
-
+        <div class="modal fade" id="defaultModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="defaultModalLabel">Add Data</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row clearfix">
+                          <div class="col-sm-12">
+                              <div class="form-group">
+                                  <div class="form-line">
+                                      <input type="text" class="form-control" placeholder="Event Name" />
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="form-line">
+                                      <input type="password" class="form-control" placeholder="Descriptions" />
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="form-line">
+                                      <input type="text" class="datepicker form-control" placeholder="Please choose a date...">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="form-line">
+                                      <input type="password" class="form-control" placeholder="Place" />
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link waves-effect">SAVE CHANGES</button>
+                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -317,6 +359,22 @@
     <!-- Waves Effect Plugin Js -->
     <script src="plugins/node-waves/waves.js"></script>
 
+    <!-- Autosize Plugin Js -->
+    <script src="plugins/autosize/autosize.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/forms/basic-form-elements.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+
     <!-- Jquery DataTable Plugin Js -->
     <script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
     <script src="plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
@@ -327,13 +385,6 @@
     <script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
     <script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
     <script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
-
-    <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/tables/jquery-datatable.js"></script>
-
-    <!-- Demo Js -->
-    <script src="js/demo.js"></script>
 
 </body>
 
