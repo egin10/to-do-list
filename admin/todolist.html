@@ -123,7 +123,7 @@
                         </a>
                     </li>
                     <li class="active">
-                        <a href="#">
+                        <a href="about.html">
                             <i class="material-icons">assignment</i>
                             <span>About</span>
                         </a>
@@ -158,7 +158,7 @@
                     <div class="card">
                         <div class="header">
                             <div class="col-md-2">
-                              <button type="button" class="btn bg-red btn-block btn-md waves-effect" data-toggle="modal" data-target="#defaultModal">Add</button>
+                              <button type="button" class="btn bg-green btn-block btn-md waves-effect" data-toggle="modal" data-target="#defaultModal">Add</button>
                             </div>
                             <br>
                             <!-- <ul class="header-dropdown m-r--5">
@@ -170,12 +170,10 @@
                                 <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                     <thead>
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
+                                            <th>Event Name</th>
+                                            <th>Descriptions</th>
+                                            <th>Date</th>
+                                            <th>Place</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -183,10 +181,8 @@
                                         <tr>
                                             <td>Tiger Nixon</td>
                                             <td>System Architect</td>
-                                            <td>Edinburgh</td>
+                                            <td>17/11/5</td>
                                             <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>$320,800</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -197,10 +193,8 @@
                                         <tr>
                                             <td>Garrett Winters</td>
                                             <td>Accountant</td>
-                                            <td>Tokyo</td>
+                                            <td>17/11/5</td>
                                             <td>63</td>
-                                            <td>2011/07/25</td>
-                                            <td>$170,750</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -211,10 +205,8 @@
                                         <tr>
                                             <td>Ashton Cox</td>
                                             <td>Junior Technical Author</td>
-                                            <td>San Francisco</td>
+                                            <td>17/11/5</td>
                                             <td>66</td>
-                                            <td>2009/01/12</td>
-                                            <td>$86,000</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -225,10 +217,8 @@
                                         <tr>
                                             <td>Cedric Kelly</td>
                                             <td>Senior Javascript Developer</td>
-                                            <td>Edinburgh</td>
+                                            <td>17/11/5</td>
                                             <td>22</td>
-                                            <td>2012/03/29</td>
-                                            <td>$433,060</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -239,10 +229,8 @@
                                         <tr>
                                             <td>Airi Satou</td>
                                             <td>Accountant</td>
-                                            <td>Tokyo</td>
+                                            <td>17/11/5</td>
                                             <td>33</td>
-                                            <td>2008/11/28</td>
-                                            <td>$162,700</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -253,10 +241,8 @@
                                         <tr>
                                             <td>Brielle Williamson</td>
                                             <td>Integration Specialist</td>
-                                            <td>New York</td>
+                                            <td>17/11/5</td>
                                             <td>61</td>
-                                            <td>2012/12/02</td>
-                                            <td>$372,000</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -267,10 +253,8 @@
                                         <tr>
                                             <td>Herrod Chandler</td>
                                             <td>Sales Assistant</td>
-                                            <td>San Francisco</td>
+                                            <td>17/11/5</td>
                                             <td>59</td>
-                                            <td>2012/08/06</td>
-                                            <td>$137,500</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -281,10 +265,8 @@
                                         <tr>
                                             <td>Rhona Davidson</td>
                                             <td>Integration Specialist</td>
-                                            <td>Tokyo</td>
+                                            <td>17/11/5</td>
                                             <td>55</td>
-                                            <td>2010/10/14</td>
-                                            <td>$327,900</td>
                                             <td>
                                               <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
                                                   <button type="button" class="btn bg-blue waves-effect">Edit</button>
@@ -359,21 +341,8 @@
     <!-- Waves Effect Plugin Js -->
     <script src="plugins/node-waves/waves.js"></script>
 
-    <!-- Autosize Plugin Js -->
-    <script src="plugins/autosize/autosize.js"></script>
-
-    <!-- Moment Plugin Js -->
-    <script src="plugins/momentjs/moment.js"></script>
-    <!-- coba -->
     <!-- Bootstrap Material Datetime Picker Plugin Js -->
     <script src="plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
-
-    <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/forms/basic-form-elements.js"></script>
-
-    <!-- Demo Js -->
-    <script src="js/demo.js"></script>
 
     <!-- Jquery DataTable Plugin Js -->
     <script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
@@ -385,6 +354,13 @@
     <script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
     <script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
     <script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/tables/jquery-datatable.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
 
 </body>
 
