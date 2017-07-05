@@ -1,5 +1,5 @@
 module.exports = {
-  isLogin: function(req, res, next){
+  isLogin: (req, res, next) => {
     console.log('is Login!');
     next();
   },

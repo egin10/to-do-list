@@ -1,10 +1,10 @@
-var express = require('express');
-var path = require('path');
-var swig = require('swig');
-var bodyParser = require('body-parser');
-var session = require('express-session');
+const express = require('express');
+const path = require('path');
+const swig = require('swig');
+const bodyParser = require('body-parser');
+const session = require('express-session');
 
-var app = express();
+const app = express();
 
 //============= VIEW ENGINE
 app.engine('html', swig.renderFile);
@@ -21,8 +21,8 @@ app.use(session({
 }));
 
 //============= ROUTER
-var main = require('./routes');
-var user = require('./routes/user');
+const main = require('./routes');
+const user = require('./routes/user');
 
 app.use('/', main);
 app.use('/user', user);
@@ -34,7 +34,7 @@ app.use('*', function(req, res){
   res.end('Page Not Found!');
 });
 
-var port = process.env.PORT || 8000;
+const port = process.env.PORT || 8000;
 app.listen(port, function(req, res){
   console.log('http://localhost:'+port+'/');
 });
