@@ -1,11 +1,11 @@
 module.exports = {
-  list: function(req, res){
+  list: (req, res) => {
     res.send('List Page');
   },
-  addList: function(req, res){
+  addList: (req, res) => {
     res.send('Add List Page');
   },
-  editList: function(req, res){
+  editList: (req, res) => {
     res.send('Edit List Page ' + req.params.id);
   },
 }
