@@ -15,7 +15,10 @@ router.get('/about', isLogin, userController.about);
 router.get('/setting', isLogin, userController.setting);
 router.get('/todolist', isLogin, todoListController.list);
 router.get('/addlist', isLogin, todoListController.addList);
+router.post('/addlist', isLogin, todoListController.addListPost);
 router.get('/editlist/:id', isLogin, todoListController.editList);
+router.post('/editlist', isLogin, todoListController.editListPost);
+router.get('/delete/:id', isLogin, todoListController.delete);
 router.get('/logout', isLogin, AuthController.logout);
 
 module.exports = router

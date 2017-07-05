@@ -36,5 +36,5 @@ app.use('*', function(req, res){
 
 const port = process.env.PORT || 8000;
 app.listen(port, function(req, res){
-  console.log('http://localhost:'+port+'/');
+  console.log(`http://localhost:${port}/`);
 });

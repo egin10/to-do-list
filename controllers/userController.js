@@ -1,11 +1,11 @@
 module.exports = {
   home: (req, res) => {
-    res.send('Home Page')
+    res.send(`Home Page`)
   },
   about: (req, res) => {
-    res.send('About Page');
+    res.send(`About Page`);
   },
   setting: (req, res) => {
-    res.send('Setting Page');
+    res.send(`Setting Page`);
   },
 }

@@ -1,5 +1,5 @@
 module.exports = {
   index: (req, res) => {
-    res.send('Index Page');
+    res.send(`Index Page`);
   },
 }
