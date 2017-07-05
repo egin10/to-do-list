@@ -4,6 +4,7 @@ const Auth = require('./Auth');
 //========== CONTROLLERS
 const userController = require('./../controllers/userController');
 const todoListController = require('./../controllers/todoListController');
+const AuthController = require('./../controllers/Auth');
 
 const router = express.Router();
 
@@ -15,5 +16,6 @@ router.get('/setting', isLogin, userController.setting);
 router.get('/todolist', isLogin, todoListController.list);
 router.get('/addlist', isLogin, todoListController.addList);
 router.get('/editlist/:id', isLogin, todoListController.editList);
+router.get('/logout', isLogin, AuthController.logout);
 
 module.exports = router
