@@ -4,7 +4,7 @@ const Auth = require('./Auth');
 //========== CONTROLLERS
 const userController = require('./../controllers/userController');
 const todoListController = require('./../controllers/todoListController');
-const AuthController = require('./../controllers/Auth');
+const AuthController = require('./../config/Auth');
 
 const router = express.Router();
 

@@ -1,4 +1,11 @@
 module.exports = {
+  // ========= MIDDLEWARE
+  isLogin: (req, res, next) => {
+    console.log(`is Login!`);
+    next();
+  },
+
+  // ======= ROUTING
   login: (req, res) => {
     res.send(`Login Page`);
   },

@@ -1,3 +1,7 @@
+const mongo = require('./../config/db');
+
+mongo.connectDB;
+
 module.exports = {
   home: (req, res) => {
     res.send(`Home Page`)

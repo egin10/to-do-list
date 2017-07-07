@@ -2,7 +2,7 @@ const express = require('express');
 
 //========== CONTROLLERS
 const mainController = require('./../controllers/mainController');
-const AuthController = require('./../controllers/Auth');
+const AuthController = require('./../config/Auth');
 
 const router = express.Router();
 
