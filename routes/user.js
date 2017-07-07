@@ -1,5 +1,4 @@
 const express = require('express');
-const Auth = require('./Auth');
 
 //========== CONTROLLERS
 const userController = require('./../controllers/userController');
@@ -8,7 +7,7 @@ const AuthController = require('./../config/Auth');
 
 const router = express.Router();
 
-const isLogin = Auth.isLogin;
+const isLogin = AuthController.isLogin;
 
 router.get('/', isLogin, userController.home);
 router.get('/about', isLogin, userController.about);
