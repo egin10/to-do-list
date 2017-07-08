@@ -1,5 +1,5 @@
 # to-do-list
-Learn Expressjs, Mysql for ToDo List
+Learn Expressjs, MongoDB for ToDo List
 
 1. clone : `git clone https://github.com/egin10/to-do-list`
 2. install : `cd to-do-list && npm i`
