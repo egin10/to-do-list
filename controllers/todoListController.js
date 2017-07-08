@@ -1,7 +1,3 @@
-const mongo = require('./../config/db');
-
-mongo.connectDB;
-
 module.exports = {
   list: (req, res) => {
     res.send(`List Page`);

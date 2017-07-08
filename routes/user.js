@@ -11,7 +11,8 @@ const isLogin = AuthController.isLogin;
 
 router.get('/', isLogin, userController.home);
 router.get('/about', isLogin, userController.about);
-router.get('/setting', isLogin, userController.setting);
+router.get('/setting/:user', isLogin, userController.setting);
+router.post('/setting', isLogin, userController.settingPost);
 router.get('/todolist', isLogin, todoListController.list);
 router.get('/addlist', isLogin, todoListController.addList);
 router.post('/addlist', isLogin, todoListController.addListPost);
