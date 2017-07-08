@@ -26,8 +26,8 @@ module.exports = {
         if (err) {
           res.send(err);
         } else {
-          res.json(data);
-          // res.json({"status": "200", "message": "Success"});
+          // res.json(data);
+          res.json({"status": 200, "message": "Success"});
         }
       });
   },

@@ -1,9 +1,4 @@
-const mongoose = require('mongoose'),
-  database = require('./../config/db'),
-  User = require('./../models/User');
-
-mongoose.Promise = require('bluebird');
-mongoose.connect(database.url, { useMongoClient: true });
+const User = require('./../models/User');
 
 module.exports = {
   index: (req, res) => {
@@ -22,7 +17,7 @@ module.exports = {
       if (err) {
         res.send(err);
       }
-      res.json({ "status": "200", "message": "Success" });
+      res.json({ "status": 200, "message": "Success" });
     });
   },
 }

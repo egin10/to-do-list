@@ -11,6 +11,6 @@ let todoSchema = new Schema({
 
 //Define model of todo
 // mongoose.model('collection', Obj Schema)
-let todo = mongoose.model('dotos', todoSchema);
+let todo = mongoose.model('todos', todoSchema);
 
 module.exports = todo;
